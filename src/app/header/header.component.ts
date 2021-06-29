@@ -19,7 +19,10 @@ this.authListenerSubs = this.authService.getAuthStatusListener()
 .subscribe(isAuthenticated =>{
   this.userIsAuthenticated = isAuthenticated;
 })
-  }
+}
+onLogout(){
+  this.authService.logout();
+}
   ngOnDestroy(){
 
   }
